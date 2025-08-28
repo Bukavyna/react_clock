@@ -23,6 +23,7 @@ export class App extends React.Component<{}, State> {
   private handleDocumentClick = () => {
     this.setState((prevState: State) => ({
       ...prevState,
+      clockName: getRandomName(),
       hasClock: true,
     }));
   };
